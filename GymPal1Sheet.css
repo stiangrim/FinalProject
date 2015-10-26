@@ -1,0 +1,398 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: 100%;
+    font-family: 'Cardo', serif;
+}
+
+
+
+
+
+/* Containeren */
+
+.container {
+    min-height: 100%;
+    margin-bottom: -100px;
+    padding: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
+.container:after {
+    content: "";
+    display: block;
+}
+
+.container:after, footer {
+    height: 100px;
+}
+
+
+
+
+
+
+
+/*Bilde øverst på siden*/
+
+.topPic {
+    width: 100%;
+    background-color: lightgray;
+    border-bottom: 2px solid black;
+}
+
+#bigPic {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+/* Div for å laste ned appen */
+
+.lasteNed {
+    width: 25%;
+    position: absolute;
+    margin-top: -12%;
+    margin-left: 17%;
+}
+
+#appleStore {
+    position: relative;
+    width: 48%;
+}
+
+#androidMarket {
+    position: relative;
+    width: 48%;
+}
+
+
+
+
+
+
+
+/* Div for tekst øverst */
+
+.tekstTOP {
+    position: absolute;
+    margin-top: -32%;
+    margin-left: 10%;
+    width: 60%;
+    font-size: 30px;
+    word-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+
+/*Logo øverst til venstre*/
+
+#logo {   
+    width: 100%;
+}
+
+.logo {
+    width: 9%;
+    position: absolute;
+    margin-top: -48%;
+    margin-left: 3%;
+}
+
+
+
+
+
+
+
+
+/*Inne i selve contenten*/
+
+.h1 {
+    
+}
+
+.h1bilde {
+    width: 40px;
+    float: left;
+    margin-right: 2%;
+}
+
+#h2bilde {
+    width: 25px;
+    float: left;
+    margin-right: 2%;
+}
+
+#screen1 {
+    width: 260px;
+    float: left;
+    padding-right: 5%;
+    padding-top: 3%;
+}
+
+#screen2 {
+    width: 550px;
+    float: right;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
+#p1 {
+    padding-top: 3%;
+    font-size: 21px;
+}
+
+#p2 {
+    padding-top: 3%;
+    font-size: 21px;
+}
+
+#p3 {
+    padding-top: 3%;
+    font-size: 21px;
+}
+
+.featuresP {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*Footeren*/
+
+.ourFooter {
+    background-color: lightgray;
+    height: 100px;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.column1 {
+    background-color: lightgray;
+    width: 31.3%;
+    height: 80px;
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.column2 {
+    background-color: lightgray;
+    width: 31.3%;
+    height: 80px;
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.column3 {
+    background-color: lightgray;
+    width: 31.3%;
+    height: 80px;
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.nav {
+    display: inherit;
+    text-decoration: none;
+    color: black;
+}
+
+#footerLOGO {
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*Når skjermen er under 1000px*/
+
+@media screen and (max-width: 1000px) {
+    #screen2 {
+        float: none;
+    }
+    
+    .tekstTOP {
+        position: absolute;
+        margin-top: -32%;
+        margin-left: 10%;
+        width: 60%;
+        font-size: 25px;
+        word-wrap: break-word;
+    }
+    
+    #screen1 {
+        width: 200px;
+        float: left;
+        padding-right: 5%;
+        padding-top: 3%;
+    }
+}
+
+/*Når skjermen er under 750px*/
+
+@media screen and (max-width: 750px) {
+    .tekstTOP {
+        position: absolute;
+        margin-top: -32%;
+        margin-left: 10%;
+        width: 60%;
+        font-size: 20px;
+        word-wrap: break-word;
+    }
+    
+    #screen2 {
+        width: 480px;
+        float: none;
+        padding-left: 5%;
+        padding-top: 3%;
+    }
+    
+    #screen1 {
+        width: 200px;
+        float: none;
+        padding-right: 5%;
+        padding-top: 3%;
+        margin-left: 30%;
+    }
+}
+
+/*Når skjermen er under 600px*/
+
+@media screen and (max-width: 600px) {
+    .ourFooter {
+        height: 280px;   
+    }
+    
+    .container {
+    margin-bottom: -280px;
+    }
+    
+    .container:after, footer {
+    height: 280px;
+    }
+    
+    .column1 {
+        display: inherit;
+        width: 98%;
+        margin-top: 10px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    .column2 {
+        display: inherit;
+        width: 98%;
+        margin-top: 10px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    .column3 {
+        display: inherit;
+        width: 98%;
+        margin-top: 10px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    #footerLOGO {
+        height: 80%;
+    }
+    
+    #screen1 {
+        float: none;
+    }
+    
+    .lasteNed {
+        width: 30%;
+        position: absolute;
+        margin-top: -10%;
+        margin-left: 17%;
+    }
+    
+    .tekstTOP {
+        position: absolute;
+        margin-top: -32%;
+        margin-left: 10%;
+        width: 60%;
+        font-size: 15px;
+        word-wrap: break-word;
+    }
+    
+    #screen2 {
+        width: 400px;
+        float: none;
+        padding-left: 5%;
+        padding-top: 3%;
+    }
+}
+
+/*Når skjermen er under 500px*/
+
+@media screen and (max-width: 500px) {
+    .tekstTOP {
+        position: absolute;
+        margin-top: -32%;
+        margin-left: 10%;
+        width: 60%;
+        font-size: 13px;
+        word-wrap: break-word;
+    }
+    
+    #screen2 {
+        width: 300px;
+        float: none;
+        padding-left: 5%;
+        padding-top: 3%;
+    }
+    
+    #screen1 {
+        width: 200px;
+        float: none;
+        padding-right: 5%;
+        padding-top: 3%;
+        margin-left: 15%;
+    }
+}
